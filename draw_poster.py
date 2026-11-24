@@ -243,9 +243,9 @@ STORIES = [
     ("MARKETS", NAVY, "ASIAN STOCKS SURGE ON AI TRADE",
      "Nikkei +4.5%, Kospi +7.5%, Taiwan +9.1% as Huang's return revives the AI rally.",
      "chart"),
-    ("CHESS — GENEVA", NAVY, "WORLD CHESS TITLE MATCH OPENS",
-     "Gukesh defends crown vs Sindarov, both 20, in Geneva.",
-     "pawn"),
+    ("S. KOREA", RED, "RUSSIAN JETS ENTER DEFENCE ZONE",
+     "Jets scramble as Russian planes enter defence zone.",
+     "jet"),
     ("GAZA", RED, "AIRSTRIKE KILLS 3 AT GAZA POLICE POST",
      "At least 3 dead, 5 wounded near a police post in Khan Younis.",
      "building"),
@@ -294,25 +294,26 @@ def draw():
     fs = font(SANS_B, 15)
     tracked(d, W / 2, 174, "THE DAY'S WORLD NEWS — IN ONE PAGE", fs, MUTED, tr=3)
 
-    # ---- lead story: South Korea / KADIZ (Tuesday 24 Nov)
+    # ---- lead story: Poland / NATO (drone incident reported Tuesday;
+    # Tuesday developments: shoot-down held, NATO sends AWACS)
     ly = 204
     fk = font(SANS_B, 17)
-    d.text((28, ly), "S. KOREA", font=fk, fill=RED)
+    d.text((28, ly), "NATO — POLAND", font=fk, fill=RED)
     fh = font(SERIF_B, 42)
-    d.text((28, ly + 26), "RUSSIAN JETS", font=fh, fill=INK)
-    d.text((28, ly + 72), "ENTER DEFENCE ZONE", font=fh, fill=INK)
+    d.text((28, ly + 26), "RUSSIAN DRONE", font=fh, fill=INK)
+    d.text((28, ly + 72), "IN NATO AIRSPACE", font=fh, fill=INK)
     ff = font(SANS, 19)
-    fact = ("Jets scramble as Russian planes enter defence zone; "
-            "Seoul to summon Moscow envoy.")
+    fact = ("Shoot-down authorised, then held; "
+            "NATO sends AWACS to Poland.")
     fl = wrap(d, fact, ff, 676)
     yy = ly + 124
     for ln in fl[:2]:
         d.text((28, yy), ln, font=ff, fill=INK)
         yy += 25
-    # lead jet, right side
+    # lead radar, right side
     gx, gy, gs = 716, ly - 6, 148
     d.rectangle([gx, gy, gx + gs, gy + gs], fill=TINT, outline=RULE, width=1)
-    icon_jet(d, gx, gy, gs, INK, RED)
+    icon_radar(d, gx, gy, gs, INK, RED)
 
     # ---- grid 2 x 3
     gy0 = 372
