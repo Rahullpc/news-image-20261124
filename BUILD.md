@@ -1,4 +1,28 @@
-# news-image-20261124 — BUILD (24 Nov 11:45 WIB; REVISI v4 24 Nov ~12:30 WIB)
+# news-image-20261124 — BUILD (24 Nov 11:45 WIB; REVISI v5 24 Nov ~12:15 WIB)
+
+## REVISI v5 — Polandia kembali atas perintah bos (24 Nov 12:09 WIB, verbatim: "insiden polandia tambahkan")
+
+**Skill dibaca di AWAL ronde ini, sebelum mengubah apa pun:** figure-docs `SKILL.md` + motion-design-skill `skills/motion-design/SKILL.md`. Diterapkan: format koran satu halaman (cocok dengan isi), diagram dulu + 1 poin kunci per panel, cek "diagram saja sudah menyampaikan pesannya"; staging hero lead → grid → strip, personality Corporate konsisten, 3 lapis. Layout/format koran TIDAK diubah — bos sudah memberi ❤️ ke v3.
+
+### Temuan + perbaikan (satu per satu)
+1. **POLANDIA KEMBALI SEBAGAI LEAD (perintah bos):** insiden drone Rusia di wilayah udara Polandia kembali jadi lead, menggantikan lead Korea. Headline "RUSSIAN DRONE" / "IN NATO AIRSPACE" (42px serif; 346,5px + 394,4px dari batas 676px). Ikon radar kembali (148px, seperti v1). Kejujuran tanggal dijaga: kalimat fakta fokus ke respons Selasa — "Shoot-down authorised, then held; NATO sends AWACS to Poland." — dan tidak mengklaim insidennya terjadi Selasa (insiden Senin ~23:00 CET, berita pecah Selasa; detail + sumber di RESEARCH.md TAHAP 5).
+2. **FAKTA LEAD JADI 1 BARIS — spasi bersih:** fakta lead diukur PIL 565,0px/676px → 1 baris di y=328, berakhir ~347; garis grid di y=360 kini berjarak bersih 13px. Masalah v3/v4 ("Moscow envoy." mepet kicker grid) SELESAI.
+3. **KOREA → SLOT GRID CATUR; CATUR GUGUR:** Korea turun ke grid (slot 4): kicker S. KOREA, headline "RUSSIAN JETS ENTER DEFENCE ZONE" (2 baris), fakta "Jets scramble as Russian planes enter defence zone." (2 baris), ikon jet. Catur diganti Korea — Korea adalah peristiwa diskret Selasa yang nyata, lebih kuat dari pertandingan terjadwal. Pencarian pengganti catur dari sudut baru (UCL belum dimainkan, ATP Finals/GP Las Vegas/Test NZ–India Senin/Minggu, peluncuran antariksa belum terbang, Shenzhou-24 diumumkan Selasa tapi terbang Rabu) tidak menemukan yang lebih kuat — detail di RESEARCH.md TAHAP 5.
+4. **DIPERTAHANKAN (terverifikasi Selasa 24 Nov):** Zaporizhzhia, Hasina, Pasar, Gaza, Nepal, PMI Jepang, ALSO TODAY (BOK / Bali Jatra / Megafire).
+
+### Poster v5
+- File: [entry.png](sandbox://workspace/makefun/news-image-20261124/entry.png) — 1024×1024, 134.765 byte (≤1 MiB)
+- sha256: `1f2736115f4932d748968d3dfa981210f9118c4ca48a312bf585ed78df83ba64`
+- Salinan tampil (nama baru, anti-cache): [entry-v5-final.png](sandbox://workspace/makefun/news-image-20261124/entry-v5-final.png) — byte-identik dengan entry.png (hanya untuk ditunjukkan ke bos; TIDAK di-commit ke repo)
+- Render 300px: entry-300.png (diperbarui ke v5)
+
+### Verifikasi v5
+- Ukuran: 1024×1024, 134.765 byte ≤ 1.048.576 ✓
+- Determinisme: draw 2× → sha256 sama `1f273611…3ba64`; main.py (MAKEFUN_OUTPUT_DIR berbeda, 2 dir) → sha256 sama ✓
+- Wrap: headline lead 2 baris (346,5/394,4px); fakta lead 1 baris (565,0px/676px); headline panel Korea 2 baris, fakta 2 baris (diukur PIL) ✓
+- Cek visual penuh: semua teks terbaca huruf per huruf, tanpa typo, tanpa tumpang tindih; fakta lead 1 baris dengan spasi bersih ke garis grid; ikon radar (lead) + jet (Korea) terbaca jelas dan berbeda.
+- Cek 300px: masthead, tanggal, headline lead + headline panel dan struktur koran tetap terbaca; teks fakta kecil (wajar untuk format koran).
+- Titik terlemah (jujur): (1) insiden Polandia terjadi Senin malam — lead dibenarkan oleh berita yang pecah Selasa + perkembangan respons Selasa, dan kalimat faktanya diframing pada respons, tapi pembacaan ketat "peristiwa terjadi Selasa" tetap mengecualikan insidennya sendiri; (2) Korea muncul 2× (panel grid + item BOK di ALSO TODAY) — cerita berbeda, satu negara; (3) panel Hasina ("plans Dec 16 return") adalah pengumuman rencana Selasa — nyata, tapi berupa rencana, bukan peristiwa yang sudah terjadi; ini panel paling lunak yang tersisa setelah catur gugur.
 
 ## REVISI v4 — polish isi (perintah bos 24 Nov 12:04 WIB: "Perbaiki lagi")
 
