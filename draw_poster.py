@@ -185,11 +185,50 @@ def icon_drop(d, x0, y0, s, ink, accent):
     d.ellipse([cx - 11, y0 + 38, cx - 2, y0 + 52], fill=PAPER)
 
 
+def icon_quake(d, x0, y0, s, ink, accent):
+    # seismograph trace: sharp jagged line over a ground baseline
+    my = y0 + s * 0.48
+    pts = [(x0 + 8, my), (x0 + 18, my), (x0 + 24, my - s * 0.20),
+           (x0 + 30, my + s * 0.18), (x0 + 36, my - s * 0.28),
+           (x0 + 42, my + s * 0.22), (x0 + 48, my - s * 0.08),
+           (x0 + 54, my + s * 0.10), (x0 + 60, my), (x0 + 68, my)]
+    d.line(pts, fill=accent, width=4)
+    gy = y0 + s * 0.78
+    d.line([(x0 + 8, gy), (x0 + s - 8, gy)], fill=ink, width=3)
+    d.line([(x0 + s * 0.5 - 4, gy), (x0 + s * 0.5, gy + 8),
+            (x0 + s * 0.5 + 4, gy)], fill=ink, width=3)
+
+
+def icon_building(d, x0, y0, s, ink, accent):
+    # police post: flat-roofed building, door + four windows
+    cx = x0 + s / 2
+    d.rectangle([x0 + 14, y0 + 24, x0 + s - 14, y0 + s - 10],
+                outline=ink, width=3)
+    d.line([(x0 + 10, y0 + 24), (x0 + s - 10, y0 + 24)], fill=ink, width=3)
+    for wx in (cx - 16, cx + 8):
+        for wy in (y0 + 32, y0 + 46):
+            d.rectangle([wx, wy, wx + 8, wy + 8], fill=ink)
+    d.rectangle([cx - 7, y0 + 52, cx + 7, y0 + s - 10], fill=accent)
+
+
+def icon_factory(d, x0, y0, s, ink, accent):
+    # factory: sawtooth roof, chimney, windows
+    d.rectangle([x0 + s - 26, y0 + 12, x0 + s - 14, y0 + 38], fill=ink)
+    d.polygon([(x0 + 10, y0 + 38), (x0 + 22, y0 + 26), (x0 + 34, y0 + 38),
+               (x0 + 46, y0 + 26), (x0 + 58, y0 + 38)], fill=ink)
+    d.rectangle([x0 + 10, y0 + 38, x0 + s - 10, y0 + s - 10], fill=ink)
+    for wx in (x0 + 18, x0 + 34, x0 + 50):
+        d.rectangle([wx, y0 + 48, wx + 8, y0 + 56], fill=PAPER)
+    d.rectangle([x0 + 26, y0 + s - 22, x0 + 42, y0 + s - 10], fill=PAPER)
+
+
 ICONS = {"globe": icon_globe, "radar": icon_radar,
          "missile": icon_missile, "chart": icon_chart,
          "cuffs": icon_cuffs, "drone": icon_drone,
          "bolt": icon_bolt, "wave": icon_wave, "jet": icon_jet,
-         "flame": icon_flame, "pawn": icon_pawn, "drop": icon_drop}
+         "flame": icon_flame, "pawn": icon_pawn, "drop": icon_drop,
+         "quake": icon_quake, "building": icon_building,
+         "factory": icon_factory}
 
 
 # ---------------------------------------------------------------- stories
@@ -209,10 +248,10 @@ STORIES = [
      "pawn"),
     ("GAZA", RED, "AIRSTRIKE KILLS 3 AT GAZA POLICE POST",
      "At least 3 dead, 5 wounded near a police post in Khan Younis.",
-     "missile"),
-    ("OIL", NAVY, "OIL HOLDS NEAR $80 AS IRAN TALKS STALL",
-     "WTI steadies; Brent above $89 after Monday's 4% slide.",
-     "drop"),
+     "building"),
+    ("NEPAL", RED, "5.3 QUAKE SHAKES NEPAL",
+     "Tremors felt in India, Bhutan, Bangladesh and China; no casualties reported.",
+     "quake"),
 ]
 
 
@@ -296,7 +335,7 @@ def draw():
     d.line([(28, by - 10), (W - 28, by - 10)], fill=INK, width=2)
     pmi = ("JAPAN", NAVY, "FACTORY PMI HITS 53.7",
            "Manufacturing growth tops forecasts in November.",
-           "chart")
+           "factory")
     draw_panel(d, 28, by, 580, 96, pmi)
     ax = 648
     d.line([(ax - 20, by), (ax - 20, by + 92)], fill=RULE, width=1)
