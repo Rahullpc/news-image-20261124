@@ -1,4 +1,33 @@
-# news-image-20261124 — BUILD (24 Nov 11:45 WIB; REVISI v2 24 Nov ~12:00 WIB)
+# news-image-20261124 — BUILD (24 Nov 11:45 WIB; REVISI v3 24 Nov ~12:20 WIB)
+
+## REVISI v3 — audit ketat tanggal KEJADIAN (perintah bos 24 Nov 11:51 WIB: "Perbaiki lagi")
+
+Standar ketat: **hanya peristiwa yang TERJADI persis Selasa 24 Nov 2026**. Audit menemukan kesalahan besar v2: **lead Polandia ternyata peristiwa Senin 23 Nov ~23:00 CET** (jam "01:31 UTC" adalah saat misi pertahanan udara SELESAI + jam publikasi h.ua, bukan jam insiden). Semua panel diaudit ulang dengan standar yang sama (detail + sumber di RESEARCH.md TAHAP 3).
+
+### Temuan + perbaikan (satu per satu)
+1. **LEAD Polandia → KOREA (lead diganti):** insiden drone Dorohusk terjadi Senin 23 Nov ~23:00 CET (OSINT map; pernyataan Polish Operational Command 22:53 UTC 23 Nov; Daily Mail "Monday evening"). Lead baru: "RUSSIAN JETS ENTER DEFENCE ZONE" — Korea KADIZ Selasa pagi (Reuters Seoul 24 Nov: jet dikerahkan Selasa pagi; alert Ulleung 07:52 KST dicabut ~5 menit; attaché Rusia dipanggil Selasa). Ikon radar → jet (ikon jet sudah ada, dipakai di lead 148px).
+2. **LIBYA → ZAPORIZHZHIA (panel diganti):** serangan kapal perang 22 Nov, diumumkan 23 Nov. Diganti serangan Rusia ke Zaporizhzhia (Reuters 24 Nov): "RUSSIAN STRIKE KILLS 2 IN ZAPORIZHZHIA" / "Overnight attack wounds 22, incl. 2 children." Ikon drone → missile.
+3. **IRAN → HASINA (panel diganti):** sudut "strikes unlikely" hanya pernyataan Trump Senin 23 Nov; klaim "oil 3-month low" di v2 TIDAK terverifikasi (minyak jatuh Senin −4%, Selasa bertahan ~$80). Diganti: "HASINA PLANS DEC 16 RETURN" / "Ousted PM seeks Biman flight home after 2 years in exile." (Reuters 24 Nov, juru bicara: "on Tuesday".) Ikon bolt → globe.
+4. **PASAR (angka diperbaiki):** "Samsung +8%" TIDAK terkonfirmasi di penutupan (AP 7,5%, WSJ 6,5%) → diganti "Taiwan +9.1%" (Reuters close Selasa 24 Nov). Nikkei +4,5% dan Kospi +7,5% dipertahankan (penutupan Reuters). Fakta jadi: "Nikkei +4.5%, Kospi +7.5%, Taiwan +9.1% as Huang's return revives the AI rally."
+5. **MEKSIKO → CATUR (panel diganti):** keputusan AG Meksiko Senin 23 Nov. Diganti Kejuaraan Dunia Catur Game 1 (FIDE/Reuters, Selasa 24 Nov 15:00 CET, Jenewa): "WORLD CHESS TITLE MATCH OPENS" / "Gukesh defends crown vs Sindarov, both 20, in Geneva." Ikon baru: pawn (fungsi `icon_pawn`, bidak catur hitam + alas navy).
+6. **INDONESIA → MINYAK (panel diganti):** kebakaran Cikande Sabtu 21 Nov; 24 tewas dikonfirmasi Senin 23 Nov. Diganti: "OIL HOLDS NEAR $80 AS IRAN TALKS STALL" / "WTI steadies; Brent above $89 after Monday's 4% slide." (Bloomberg, diperbarui 24 Nov.) Ikon baru: droplet (fungsi `icon_drop`, tetesan minyak navy + highlight).
+7. **DIPERTAHANKAN (terverifikasi Selasa 24 Nov):** Gaza (Reuters Kairo 24 Nov, ≥3 tewas 5 luka Khan Younis); Pasar (penutupan Reuters 24 Nov); Korea (naik jadi lead).
+8. **STRIP BAWAH (panel diganti):** Korea pindah ke lead → panel bawah jadi Jepang: "FACTORY PMI HITS 53.7" / "Manufacturing growth tops forecasts in November." (dpa-AFX, Selasa 24 Nov; flash manufacturing PMI 53,7, tercepat 44 bulan.) Ikon chart.
+9. **ALSO TODAY (ketiga item diganti — ketiganya peristiwa Senin 23 Nov):** EU sanksi, UN AI, NZ–India draw → "S. KOREA — BOK seen hiking rates Thu" (jajak pendapat Reuters, Selasa) / "INDIA — Bali Jatra opens in Cuttack" (festival dibuka 24 Nov, Presiden Murmu meresmikan sore ini; terverifikasi dari jadwal resmi distrik — label "on Monday" di satu artikel NIE salah) / "AUSTRALIA — Megafire simulator unveiled" (UNSW + Fire Rescue NSW, Selasa 24 Nov).
+10. **Kualitas visual:** semua teks baru diukur dulu dengan PIL sebelum render (grid: headline 2 baris, fakta ≤2 baris; lead: headline 295px + 485px dari batas 676px, fakta 2 baris; ALSO TODAY berakhir 958,8 / 922,3 / 979,9px dari tepi kanan 996px). Ikon baru pawn + droplet terverifikasi terbaca di render penuh + 300px. Ikon missile dipakai 2× (Ukraina + Gaza) dan chart 2× (Pasar + PMI) — pictogram generik yang sama, dapat diterima di format koran.
+
+### Poster v3
+- File: [entry.png](sandbox://workspace/makefun/news-image-20261124/entry.png) — 1024×1024, 137.143 byte (≤1 MiB)
+- sha256: `5d2e5fc9c8094e4c5f742160cbfd0cb4d0fac9c888713ed8aec411da6c1f3fd4`
+- Salinan tampil (nama baru, anti-cache): [entry-v3-strict.png](sandbox://workspace/makefun/news-image-20261124/entry-v3-strict.png) — byte-identik dengan entry.png (hanya untuk ditunjukkan ke bos; TIDAK di-commit ke repo)
+- Render 300px: entry-300.png (diperbarui ke v3)
+
+### Verifikasi v3
+- Ukuran: 1024×1024, 137.143 byte ≤ 1.048.576 ✓
+- Determinisme: draw 2× → sha256 sama `5d2e5fc9…c1f3fd4`; main.py (MAKEFUN_OUTPUT_DIR berbeda, 2 dir) → sha256 sama ✓
+- Cek visual penuh: semua teks terbaca huruf per huruf, tanpa typo, tanpa tumpang tindih; lead fakta 2 baris tidak menabrak garis grid; ALSO TODAY tidak ada yang mepet tepi kanan (berakhir ≤979,9px).
+- Cek 300px: masthead, tanggal, headline lead + headline panel dan struktur koran tetap terbaca; teks fakta kecil (wajar untuk format koran).
+- Titik terlemah (jujur): (1) Catur Game 1 dimulai Selasa 21:00 WIB — saat poster dibuat pertandingan belum dimulai, jadi panel ini peristiwa terjadwal, bukan hasil; (2) panel Minyak adalah pola pasar (bertahan di ~$80), bukan peristiwa diskret; (3) poster kehilangan cerita Polandia — cerita paling banyak diliput hari ini — karena insidennya Senin malam; kalau bos mau Polandia kembali, itu keputusan editorial bos, bukan fakta.
 
 ## REVISI v2 — cross-check (perintah bos 24 Nov 11:39 WIB: "crosscheck perbaiki dulu sebagus mungkin")
 
@@ -15,11 +44,10 @@ Cross-check fakta live 24 Nov 11:40–12:00 WIB (Reuters, WSJ, Al Jazeera, AFP, 
 8. **Tanggal poster terverifikasi:** 24 Nov 2026 memang Selasa (`date -d 2026-11-24` → Tuesday). Kicker, footer, dan masthead tidak berubah.
 9. **Kualitas visual:** tidak ada panel kosong — semua panel sudah padat (ikon + kicker + headline + fakta). Tidak ada hiasan tambahan yang diperlukan; lebar semua teks baru diukur dulu dengan PIL sebelum render (Korea 450,9px/490px; ALSO TODAY berakhir ≤978px dari tepi kanan 996px; fakta panel ≤684px/756px untuk 2 baris).
 
-### Poster v2
-- File: [entry.png](sandbox://workspace/makefun/news-image-20261124/entry.png) — 1024×1024, 136.628 byte (≤1 MiB)
+### Poster v2 (diganti — JANGAN submit)
+- File: entry.png v2 — 1024×1024, 136.628 byte
 - sha256: `9219e8f53bd02621f89684515fa7e553c4ae0ac841ce5b5ad0c9fe91cb82421c`
-- Salinan tampil (nama baru, anti-cache): [entry-v2-crosscheck.png](sandbox://workspace/makefun/news-image-20261124/entry-v2-crosscheck.png) — byte-identik dengan entry.png (hanya untuk ditunjukkan ke bos; TIDAK di-commit ke repo)
-- Render 300px: entry-300.png (diperbarui ke v2)
+- Status: SUPERSEDED oleh v3 (audit ketat tanggal kejadian 24 Nov ~12:20 WIB — lead Polandia ternyata peristiwa Senin 23 Nov malam).
 
 ### Verifikasi v2
 - Ukuran: 1024×1024, 136.628 byte ≤ 1.048.576 ✓
@@ -32,12 +60,12 @@ Cross-check fakta live 24 Nov 11:40–12:00 WIB (Reuters, WSJ, Al Jazeera, AFP, 
 - sha256: `bf51716fb6fe1658c5058de7a1a739e6ef74a23b55e33f03350d278ee1df434e`
 - Status: SUPERSEDED oleh v2 (cross-check 24 Nov ~12:00 WIB).
 
-## Layout
+## Layout (v3 — berlaku)
 Koran satu halaman, kertas koran terang + tinta hitam + aksen merah/navy/hijau (format sama dengan edisi 23 Nov yang lolos semua cek):
 - Masthead "THE WORLD" + "TUESDAY, 24 NOVEMBER 2026" + garis merah
-- Lead penuh: drone Rusia langgar wilayah udara Polandia (ikon radar) — "RUSSIAN DRONE IN NATO AIRSPACE"
-- Grid 2×3: Ukraina, Iran, Pasar, Meksiko, Sudan, India — tiap panel pictogram + kicker + headline + 1 baris fakta
-- Strip bawah: Korea Selatan + "ALSO TODAY" (ECB, Brasil, Kongres AS)
+- Lead penuh: jet Rusia masuk zona pertahanan Korea Selatan (ikon jet) — "RUSSIAN JETS ENTER DEFENCE ZONE"
+- Grid 2×3: Zaporizhzhia, Hasina, Pasar, Catur, Gaza, Minyak — tiap panel pictogram + kicker + headline + 1 baris fakta
+- Strip bawah: PMI Jepang + "ALSO TODAY" (BOK, Bali Jatra, Megafire)
 - Footer: "All events reported on Tuesday, 24 November 2026. Sources: wire reports."
 
 ## Fakta per panel (sumber: RESEARCH.md — Reuters, WSJ, TradingView, h.ua, Access24, C54)
