@@ -237,8 +237,8 @@ STORIES = [
     ("WAR — UKRAINE", RED, "RUSSIAN STRIKE KILLS 2 IN ZAPORIZHZHIA",
      "Overnight attack wounds 22, incl. 2 children.",
      "missile"),
-    ("BANGLADESH", NAVY, "HASINA PLANS DEC 16 RETURN",
-     "Ousted PM seeks Biman flight home after 2 years in exile.",
+    ("SOLOMON ISLANDS", NAVY, "SOLOMONS TO END CHINA PACT",
+     "Honiara informs Beijing it will end 2022 deal; Australia treaty due.",
      "globe"),
     ("MARKETS", NAVY, "ASIAN STOCKS SURGE ON AI TRADE",
      "Nikkei +4.5%, Kospi +7.5%, Taiwan +9.1% as Huang's return revives the AI rally.",
@@ -344,7 +344,7 @@ def draw():
     d.text((ax, by + 2), "ALSO TODAY", font=fa, fill=RED)
     fi = font(SANS, 17)
     fb = font(SANS_B, 17)
-    also = [("S. KOREA — ", "BOK seen hiking rates Thu"),
+    also = [("MALAYSIA — ", "Myanmar returns Dec 6–7"),
             ("INDIA — ", "Bali Jatra opens in Cuttack"),
             ("AUSTRALIA — ", "Megafire simulator unveiled")]
     yy = by + 26
