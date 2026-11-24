@@ -1,4 +1,28 @@
-# news-image-20261124 — BUILD (24 Nov 11:45 WIB; REVISI v5 24 Nov ~12:15 WIB)
+# news-image-20261124 — BUILD (24 Nov 11:45 WIB; REVISI v6 24 Nov ~12:30 WIB)
+
+## REVISI v6 — Hasina → Solomons; BOK → Malaysia (perintah bos 24 Nov 12:13 WIB: "Perbaiki lagi")
+
+**Skill dibaca di AWAL ronde ini, sebelum mengubah apa pun:** figure-docs `SKILL.md` + motion-design-skill `skills/motion-design/SKILL.md`. Diterapkan: format koran satu halaman (cocok dengan isi), diagram dulu + 1 poin kunci per panel, cek "diagram saja sudah menyampaikan pesannya"; staging hero lead → grid → strip, personality Corporate konsisten, 3 lapis. Layout/format koran TIDAK diubah — bos sudah memberi ❤️ ke v3 dan v5.
+
+### Temuan + perbaikan (satu per satu)
+1. **HASINA → SOLOMON ISLANDS (panel diganti):** pengumuman rencana Hasina (panel paling lunak) diganti keputusan diplomatik konkret Selasa: Kepulauan Solomon memberitahu Beijing akan mengakhiri pakta keamanan 2022; perjanjian baru dengan Australia diperkirakan ditandatangani Rabu (Reuters 24 Nov, laporan SMH Selasa). Headline "SOLOMONS TO END CHINA PACT" (2 baris, diukur PIL), fakta "Honiara informs Beijing it will end 2022 deal; Australia treaty due." (2 baris). Ikon globe (bekas Hasina). Catatan kejujuran: pemberitahuan ke Beijing terjadi "recently" menurut SMH — berita pecah Selasa; footer "reported on Tuesday" menutupnya akurat (detail + sumber di RESEARCH.md TAHAP 6).
+2. **ALSO TODAY: BOK → MALAYSIA (duplikasi Korea hilang):** item "S. KOREA — BOK seen hiking rates Thu" diganti "MALAYSIA — Myanmar returns Dec 6–7" (PM Anwar berkata Selasa di parlemen; 1.500 warga Myanmar dikirim pulang 6–7 Des; Reuters 24 Nov). Berakhir 957,5px dari tepi kanan 996px (diukur PIL). Korea kini muncul 1× di seluruh poster (panel grid saja).
+3. **Kandidat yang ditolak (pencarian sungguh-sungguh):** PNG Parkop (jebakan tanggal — pemilu 2022 yang ditayangkan ulang 24 Nov), Ashes (seri 2025–26, bukan 2026), ancaman bom Jerman/Denmark (Senin 23 Nov), CAS Senegal (putusan Selasa sore, belum keluar), Huawei Mate X8 (launch 13:30 WIB, belum terjadi), roket USSF-266/Progress/Ariane (sore/malam, belum terbang), pengadilan Spanyol (Senin), ICJ Rohingya (19 Nov), Korut/kantor Swiss ("to consider", terlalu lunak), Dell XPS India (niche; India sudah di strip), Ifo Jerman + earnings UK/US (belum rilis saat poster dibuat). Detail di RESEARCH.md TAHAP 6.
+4. **DIPERTAHANKAN (terverifikasi Selasa 24 Nov):** lead Polandia (perintah bos), Zaporizhzhia, Pasar, S. Korea, Gaza, Nepal, PMI Jepang, ALSO TODAY (Bali Jatra / Megafire).
+
+### Poster v6
+- File: [entry.png](sandbox://workspace/makefun/news-image-20261124/entry.png) — 1024×1024, 134.955 byte (≤1 MiB)
+- sha256: `80bb3f628d9e670eab9d63a717b162525096a94968f2255c26a2b8a43964aa61`
+- Salinan tampil (nama baru, anti-cache): [entry-v6-polish.png](sandbox://workspace/makefun/news-image-20261124/entry-v6-polish.png) — byte-identik dengan entry.png (hanya untuk ditunjukkan ke bos; TIDAK di-commit ke repo)
+- Render 300px: entry-300.png (diperbarui ke v6)
+
+### Verifikasi v6
+- Ukuran: 1024×1024, 134.955 byte ≤ 1.048.576 ✓
+- Determinisme: draw 2× → sha256 sama `80bb3f62…aa61`; main.py (MAKEFUN_OUTPUT_DIR berbeda, 2 dir) → sha256 sama ✓
+- Wrap (diukur PIL): headline Solomons 2 baris, fakta 2 baris; item Malaysia berakhir 957,5px/996px ✓
+- Cek visual penuh: semua teks terbaca huruf per huruf, tanpa typo, tanpa tumpang tindih; panel Solomons (ikon globe) dan item Malaysia terbaca jelas; Korea hanya 1× di poster.
+- Cek 300px: masthead, tanggal, headline lead + headline panel dan struktur koran tetap terbaca; teks fakta kecil (wajar untuk format koran).
+- Titik terlemah (jujur): (1) Solomons — pemberitahuan ke Beijing terjadi "recently" (berita pecah Selasa), bukan peristiwa yang terverifikasi terjadi Selasa pagi; ini jalur "dilaporkan Selasa" yang sama dengan lead Polandia; (2) Polandia — insidennya Senin malam, lead dibenarkan oleh berita yang pecah Selasa + perkembangan respons Selasa; (3) setelah ronde ini, tidak ada lagi kelemahan berarti yang bisa diperbaiki — semua 8 panel + strip kini peristiwa diskret Selasa (atau dilaporkan Selasa dengan framing jujur), angka terverifikasi, tanpa duplikasi negara/panel, tanpa ikon ganda.
 
 ## REVISI v5 — Polandia kembali atas perintah bos (24 Nov 12:09 WIB, verbatim: "insiden polandia tambahkan")
 
@@ -109,26 +133,26 @@ Cross-check fakta live 24 Nov 11:40–12:00 WIB (Reuters, WSJ, Al Jazeera, AFP, 
 - sha256: `bf51716fb6fe1658c5058de7a1a739e6ef74a23b55e33f03350d278ee1df434e`
 - Status: SUPERSEDED oleh v2 (cross-check 24 Nov ~12:00 WIB).
 
-## Layout (v4 — berlaku; sama seperti v3, hanya isi panel berubah)
+## Layout (v6 — berlaku; sama seperti v5, hanya isi panel berubah)
 Koran satu halaman, kertas koran terang + tinta hitam + aksen merah/navy/hijau (format sama dengan edisi 23 Nov yang lolos semua cek):
 - Masthead "THE WORLD" + "TUESDAY, 24 NOVEMBER 2026" + garis merah
-- Lead penuh: jet Rusia masuk zona pertahanan Korea Selatan (ikon jet) — "RUSSIAN JETS ENTER DEFENCE ZONE"
-- Grid 2×3: Zaporizhzhia, Hasina, Pasar, Catur, Gaza, Nepal — tiap panel pictogram + kicker + headline + 1 baris fakta
-- Strip bawah: PMI Jepang + "ALSO TODAY" (BOK, Bali Jatra, Megafire)
+- Lead penuh: drone Rusia di wilayah udara Polandia (ikon radar) — "RUSSIAN DRONE IN NATO AIRSPACE"
+- Grid 2×3: Zaporizhzhia, Solomon Islands, Pasar, S. Korea, Gaza, Nepal — tiap panel pictogram + kicker + headline + 1 baris fakta
+- Strip bawah: PMI Jepang + "ALSO TODAY" (Malaysia, Bali Jatra, Megafire)
 - Footer: "All events reported on Tuesday, 24 November 2026. Sources: wire reports."
 
-## Fakta per panel (sumber: RESEARCH.md — Reuters, WSJ, TradingView, h.ua, Access24, C54)
+## Fakta per panel (v6 — sumber: RESEARCH.md)
 | Panel | Fakta di poster | Sumber |
 |---|---|---|
-| Polandia (lead) | Shoot-down authorised, then held; NATO sends AWACS to Poland | Drone Rusia langgar wilayah udara Polandia (01:31 UTC, Dorohusk); izin tembak ditahan; NATO kerahkan AWACS |
-| Ukraina | Drones strike a Russian warship at a Libyan base; a refinery burns in Russia | Drone laut Ukraina hantam kapal perang Rusia di pangkalan Libya; kilang Novoshakhtinsk terbakar |
-| Iran | Attack put off until January; oil falls 4% as U.S. sanctions Iran's banking network | Trump tunda serangan ke Iran sampai 1 Jan; minyak -4,11%; sanksi AS ke jaringan bank Iran |
-| Pasar | Nikkei +4.4%, Kospi +7% as Huang's return revives the AI rally; SoftBank +8% | Nikkei +4,4% (58.920), Kospi +7%, S&P +4,7%, Nasdaq +6,9%; Nvidia +31% |
-| Meksiko | Mexico to prosecute the cartel boss at home, defying a U.S. extradition request | Meksiko adili El Chapo Isidro di dalam negeri, tolak ekstradisi AS |
-| Sudan | RSF drones strike power stations; mass blackouts across Sudan | Drone RSF hantam stasiun listrik; pemadaman massal |
-| India | Flash flood tears down a mountain valley; about 100 unaccounted for | Banjir bandang Himalaya, ≥4 tewas, ~100 hilang |
-| Korea Selatan | Jets scramble after a Russian airspace breach | Peringatan serangan udara; jet dikerahkan setelah pelanggaran Rusia |
-| Also today | ECB: Lagarde resigns; Brazil: storm displaces thousands; Congress: first Gen Z woman elected | Lagarde mundur; badai Brasil; Melat Kiros (29) wanita Gen Z pertama di Kongres AS |
+| Polandia (lead) | Shoot-down authorised, then held; NATO sends AWACS to Poland | Insiden drone Senin malam, berita + respons Selasa; izin tembak ditahan; NATO kerahkan AWACS |
+| Ukraina | Overnight attack wounds 22, incl. 2 children | Serangan Rusia ke Zaporizhzhia, 2 tewas 22 luka (Reuters 24 Nov) |
+| Solomon Islands | Honiara informs Beijing it will end 2022 deal; Australia treaty due | Honiara akhiri pakta keamanan 2022 dengan China; perjanjian Australia Rabu (Reuters/SMH 24 Nov) |
+| Pasar | Nikkei +4.5%, Kospi +7.5%, Taiwan +9.1% as Huang's return revives the AI rally | Penutupan Reuters 24 Nov |
+| S. Korea | Jets scramble as Russian planes enter defence zone | Jet Rusia masuk KADIZ, Selasa pagi (Reuters Seoul 24 Nov) |
+| Gaza | At least 3 dead, 5 wounded near a police post in Khan Younis | Serangan udara Israel, Khan Younis (Reuters Kairo 24 Nov) |
+| Nepal | Tremors felt in India, Bhutan, Bangladesh and China; no casualties reported | Gempa 5,3 Koshi Province, 07:02 IST (Reuters/EMSC 24 Nov) |
+| Jepang (strip) | Manufacturing growth tops forecasts in November | Flash manufacturing PMI 53,7, tercepat 44 bulan (dpa-AFX 24 Nov) |
+| Also today | Malaysia: Myanmar returns Dec 6–7; India: Bali Jatra opens in Cuttack; Australia: Megafire simulator unveiled | Anwar berkata Selasa (Reuters 24 Nov); festival dibuka 24 Nov; UNSW + Fire Rescue NSW 24 Nov |
 
 ## Yang sengaja tidak dipakai
 - **700.000 tentara Rusia tewas (Meduza/Mediazona)** — investigasi besar, TAPI dipublikasikan Senin 23 Nov, bukan 24 Nov.
