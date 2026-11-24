@@ -1,12 +1,36 @@
-# news-image-20261124 — BUILD (24 Nov 11:45 WIB)
+# news-image-20261124 — BUILD (24 Nov 11:45 WIB; REVISI v2 24 Nov ~12:00 WIB)
 
-Satu poster, siap ditunjukkan ke bos. BELUM di-submit — submit hanya atas perintah eksplisit bos setelah ia melihat posternya.
+## REVISI v2 — cross-check (perintah bos 24 Nov 11:39 WIB: "crosscheck perbaiki dulu sebagus mungkin")
 
-## Poster
-- File: [entry.png](sandbox://workspace/makefun/news-image-20261124/entry.png) — 1024×1024, 137.597 byte (≤1 MiB)
+Cross-check fakta live 24 Nov 11:40–12:00 WIB (Reuters, WSJ, Al Jazeera, AFP, TradingView, The Guardian, AP) menemukan **5 cerita tanggalnya meleset + 2 fakta salah + 2 angka meleset**. Semua diperbaiki di `draw_poster.py`, render ulang, verifikasi ulang. BELUM di-submit — submit hanya atas perintah eksplisit bos setelah ia melihat poster revisi.
+
+### Temuan + perbaikan (satu per satu)
+1. **SUDAN → GAZA (panel diganti):** cerita v1 (drone RSF hantam stasiun listrik, pemadaman massal) ternyata Al Jazeera **2 Nov 2026** — bukan 24 Nov. Diganti Gaza, terverifikasi Reuters 24 Nov: "AIRSTRIKE KILLS 3 AT GAZA POLICE POST" / "At least 3 dead, 5 wounded near a police post in Khan Younis." Ikon baru: missile.
+2. **INDIA → INDONESIA (panel diganti):** cerita v1 (banjir Himalaya 4 tewas, ~100 hilang) ternyata AFP **6 Agu 2025** (Dharali) — lebih dari setahun lalu. Diganti kebakaran pabrik Cikande, Banten (Reuters 23 Nov + laporan 24 Nov): "24 DEAD, 30 MISSING IN FACTORY FIRE" / "Search goes on at Java candy plant; DNA tests to name victims." Ikon baru: flame (fungsi `icon_flame`, api merah + inti emas).
+3. **IRAN (reframe):** headline v1 "TRUMP DELAYS IRAN STRIKE TO JAN 1" bersumber dari pernyataan 19–22 Nov; "oil falls 4%" adalah pergerakan 23 Nov. Diganti sudut 24 Nov: "TRUMP: NEW IRAN STRIKES UNLIKELY" / "Oil hits 3-month low; U.S. sanctions Iran's shadow banks." (Trump sebut serangan baru "quite unlikely" Senin 23 Nov; minyak ke titik terendah 3 bulan Selasa 24 Nov; sanksi Treasury ke shadow bank Iran.) Ikon: missile → bolt (energi/minyak).
+4. **PASAR (angka diperbaiki):** "SoftBank +8%" **SALAH** (aktual +4,99%, TradingKey). Diganti "Samsung +8%" (intraday 24 Nov +8,2–8,3% di beberapa sumber). Nikkei +4,4% → **+4,5%** dan Kospi +7% → **+7,5%** (penutupan Reuters 24 Nov).
+5. **KOREA (fakta diperbaiki):** "AIR-RAID ALERT AFTER BREACH" + "Jets scramble after a Russian airspace breach" **SALAH** — JCS: TIDAK ada pelanggaran wilayah udara Korea Selatan; pesawat Rusia hanya masuk KADIZ (zona identifikasi); alert dicabut dalam 5 menit. Diganti: "RUSSIAN JETS ENTER DEFENCE ZONE" / "Jets scramble as Russian planes enter defence zone." Kata "breach" dihapus dari poster.
+6. **ALSO TODAY (ketiga item diganti):** ECB "Lagarde resigns" = **29 Okt 2026**; Brasil "Storm displaces thousands" = badai **20 Nov**; Kongres "First Gen Z woman elected" = **3 Nov 2026**. Diganti (semua dilaporkan 24 Nov): "EU — 22nd Russia sanctions proposed" / "UN — Guterres seeks global AI rules" / "SPORT — NZ hold India to Wellington draw".
+7. **DIPERTAHANKAN (terverifikasi):** Lead Polandia/NATO (Reuters 24 Nov — drone 01:31 UTC Dorohusk, izin tembak ditahan, AWACS); Ukraina/Libya (pengumuman 23 Nov + laporan mendalam WSJ 24 Nov); Meksiko (Reuters 23 Nov, Al Jazeera 24 Nov).
+8. **Tanggal poster terverifikasi:** 24 Nov 2026 memang Selasa (`date -d 2026-11-24` → Tuesday). Kicker, footer, dan masthead tidak berubah.
+9. **Kualitas visual:** tidak ada panel kosong — semua panel sudah padat (ikon + kicker + headline + fakta). Tidak ada hiasan tambahan yang diperlukan; lebar semua teks baru diukur dulu dengan PIL sebelum render (Korea 450,9px/490px; ALSO TODAY berakhir ≤978px dari tepi kanan 996px; fakta panel ≤684px/756px untuk 2 baris).
+
+### Poster v2
+- File: [entry.png](sandbox://workspace/makefun/news-image-20261124/entry.png) — 1024×1024, 136.628 byte (≤1 MiB)
+- sha256: `9219e8f53bd02621f89684515fa7e553c4ae0ac841ce5b5ad0c9fe91cb82421c`
+- Salinan tampil (nama baru, anti-cache): [entry-v2-crosscheck.png](sandbox://workspace/makefun/news-image-20261124/entry-v2-crosscheck.png) — byte-identik dengan entry.png (hanya untuk ditunjukkan ke bos; TIDAK di-commit ke repo)
+- Render 300px: entry-300.png (diperbarui ke v2)
+
+### Verifikasi v2
+- Ukuran: 1024×1024, 136.628 byte ≤ 1.048.576 ✓
+- Determinisme: draw 2× → sha256 sama `9219e8f5…82421c`; main.py (MAKEFUN_OUTPUT_DIR berbeda, 2 dir) → sha256 sama ✓
+- Cek visual penuh: semua teks terbaca, tanpa typo, tanpa tumpang tindih; Korea 1 baris headline + 1 baris fakta (tidak menabrak footer); ALSO TODAY tidak ada yang mepet tepi kanan (berakhir ≤978px).
+- Cek 300px: masthead, tanggal, headline lead + headline panel dan struktur koran tetap terbaca; teks fakta kecil (wajar untuk format koran).
+
+## Poster v1 (diganti — JANGAN submit)
+- File: entry.png v1 — 1024×1024, 137.597 byte
 - sha256: `bf51716fb6fe1658c5058de7a1a739e6ef74a23b55e33f03350d278ee1df434e`
-- Program gambar: [draw_poster.py](sandbox://workspace/makefun/news-image-20261124/draw_poster.py) (ditulis dari nol di sesi ini, PIL; deterministik — tanpa network/jam/random)
-- Entrypoint: [main.py](sandbox://workspace/makefun/news-image-20261124/main.py) (stdlib only, menyalin entry.png ke /output/entry.png)
+- Status: SUPERSEDED oleh v2 (cross-check 24 Nov ~12:00 WIB).
 
 ## Layout
 Koran satu halaman, kertas koran terang + tinta hitam + aksen merah/navy/hijau (format sama dengan edisi 23 Nov yang lolos semua cek):
