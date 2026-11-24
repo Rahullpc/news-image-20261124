@@ -160,10 +160,19 @@ def icon_jet(d, x0, y0, s, ink, accent):
                (cx + 4, y0 + 40), (cx - 4, y0 + 40)], fill=accent)
 
 
+def icon_flame(d, x0, y0, s, ink, accent):
+    cx = x0 + s / 2
+    d.polygon([(cx, y0 + 8), (cx + 20, y0 + 40), (cx + 16, y0 + s - 10),
+               (cx - 16, y0 + s - 10), (cx - 20, y0 + 40)], fill=accent)
+    d.polygon([(cx, y0 + 34), (cx + 9, y0 + 52), (cx + 7, y0 + s - 16),
+               (cx - 7, y0 + s - 16), (cx - 9, y0 + 52)], fill=GOLD)
+
+
 ICONS = {"globe": icon_globe, "radar": icon_radar,
          "missile": icon_missile, "chart": icon_chart,
          "cuffs": icon_cuffs, "drone": icon_drone,
-         "bolt": icon_bolt, "wave": icon_wave, "jet": icon_jet}
+         "bolt": icon_bolt, "wave": icon_wave, "jet": icon_jet,
+         "flame": icon_flame}
 
 
 # ---------------------------------------------------------------- stories
@@ -172,21 +181,21 @@ STORIES = [
     ("WAR — UKRAINE", RED, "SEA DRONES HIT WARSHIP OFF LIBYA",
      "Drones strike a Russian warship at a Libyan base; a refinery burns in Russia.",
      "drone"),
-    ("IRAN — U.S.", RED, "TRUMP DELAYS IRAN STRIKE TO JAN 1",
-     "Attack put off until January; oil falls 4% as U.S. sanctions Iran's banking network.",
-     "missile"),
+    ("IRAN — U.S.", RED, "TRUMP: NEW IRAN STRIKES UNLIKELY",
+     "Oil hits 3-month low; U.S. sanctions Iran's shadow banks.",
+     "bolt"),
     ("MARKETS", NAVY, "ASIAN STOCKS SURGE ON AI TRADE",
-     "Nikkei +4.4%, Kospi +7% as Huang's return revives the AI rally; SoftBank +8%.",
+     "Nikkei +4.5%, Kospi +7.5% as Huang's return revives the AI rally; Samsung +8%.",
      "chart"),
     ("MEXICO", NAVY, "EL CHAPO ISIDRO TO FACE MEXICAN TRIAL",
      "Mexico to prosecute the cartel boss at home, defying a U.S. extradition request.",
      "cuffs"),
-    ("SUDAN", RED, "DRONES HIT POWER PLANTS; BLACKOUTS",
-     "RSF drones strike power stations; mass blackouts across Sudan.",
-     "bolt"),
-    ("INDIA", RED, "HIMALAYAN FLOOD: 4 DEAD, 100 MISSING",
-     "Flash flood tears down a mountain valley; about 100 unaccounted for.",
-     "wave"),
+    ("GAZA", RED, "AIRSTRIKE KILLS 3 AT GAZA POLICE POST",
+     "At least 3 dead, 5 wounded near a police post in Khan Younis.",
+     "missile"),
+    ("INDONESIA", RED, "24 DEAD, 30 MISSING IN FACTORY FIRE",
+     "Search goes on at Java candy plant; DNA tests to name victims.",
+     "flame"),
 ]
 
 
@@ -268,8 +277,8 @@ def draw():
     # ---- bottom band: South Korea + also today
     by = 898
     d.line([(28, by - 10), (W - 28, by - 10)], fill=INK, width=2)
-    korea = ("S. KOREA", RED, "AIR-RAID ALERT AFTER BREACH",
-             "Jets scramble after a Russian airspace breach.",
+    korea = ("S. KOREA", RED, "RUSSIAN JETS ENTER DEFENCE ZONE",
+             "Jets scramble as Russian planes enter defence zone.",
              "jet")
     draw_panel(d, 28, by, 580, 96, korea)
     ax = 648
@@ -278,9 +287,9 @@ def draw():
     d.text((ax, by + 2), "ALSO TODAY", font=fa, fill=RED)
     fi = font(SANS, 17)
     fb = font(SANS_B, 17)
-    also = [("ECB — ", "Lagarde resigns; EU hunts new chief"),
-            ("BRAZIL — ", "Storm displaces thousands"),
-            ("CONGRESS — ", "First Gen Z woman elected")]
+    also = [("EU — ", "22nd Russia sanctions proposed"),
+            ("UN — ", "Guterres seeks global AI rules"),
+            ("SPORT — ", "NZ hold India to Wellington draw")]
     yy = by + 26
     for lead, rest in also:
         d.text((ax, yy), lead, font=fb, fill=INK)
