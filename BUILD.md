@@ -1,4 +1,29 @@
-# news-image-20261124 — BUILD (24 Nov 11:45 WIB; REVISI v3 24 Nov ~12:20 WIB)
+# news-image-20261124 — BUILD (24 Nov 11:45 WIB; REVISI v4 24 Nov ~12:30 WIB)
+
+## REVISI v4 — polish isi (perintah bos 24 Nov 12:04 WIB: "Perbaiki lagi")
+
+**Skill dibaca di AWAL ronde ini, sebelum mengubah apa pun** (koreksi atas ronde v3 yang membacanya di akhir): figure-docs `SKILL.md` + motion-design-skill `skills/motion-design/SKILL.md` (SKILL.md-nya ada di subfolder `skills/motion-design/`, bukan di root skill). Diterapkan: format koran satu halaman (cocok dengan isi — rangkuman berita satu hari), diagram dulu + 1 poin kunci per panel, cek "diagram saja sudah menyampaikan pesannya"; staging hero lead → grid → strip, personality Corporate konsisten, 3 lapis (primer/sekunder/ambient). Layout/format koran TIDAK diubah — bos sudah memberi ❤️ ke v3, jadi hanya isi yang lemah yang diperbaiki.
+
+### Temuan + perbaikan (satu per satu)
+1. **MINYAK → NEPAL (panel diganti):** pola pasar ~$80 (bukan peristiwa diskret) diganti gempa Nepal 5,3 (Reuters/EMSC, Selasa 24 Nov 07:02 IST, Koshi Province): "5.3 QUAKE SHAKES NEPAL" / "Tremors felt in India, Bhutan, Bangladesh and China; no casualties reported." (1 baris headline 332,9px/378px; fakta 2 baris.) Ikon baru: seismograf (`icon_quake`, zigzag merah + garis tanah hitam). Catatan: pusat Nepal mencatat 5,6 — poster memakai 5,3 (EMSC/Reuters/NCS).
+2. **CATUR DIPERTAHANKAN (jujur — tidak ada pengganti yang lebih kuat):** pencarian menyeluruh 14+ kandidat, semuanya gagal standar ketat: FIFA (Senin 23 Nov), Gomez (Senin 23 Nov), NATO/satelit (Senin 23 Nov), UNSC grain (Senin 23 Nov), sanksi Treasury Iran (Senin 23 Nov), Kenya–DRC (Minggu 22 Nov), TRIPP (Senin 23 Nov), tentara Meksiko (Minggu 23 Nov), mogok Belgia (Senin 23 Nov), kapal Nigeria (Jumat 20 Nov), Alaska Senate (diumumkan 18 Nov). Ifo Jerman dirilis Selasa tapi angka aktualnya belum keluar saat poster dibuat (baru prakiraan). Pembukaan Game 1 (15:00 CET = 21:00 WIB) adalah peristiwa hari Selasa itu sendiri — acara marquee terjadwal hari itu. Detail kandidat + tanggal di RESEARCH.md TAHAP 4.
+3. **IKON GANDA DIPERBAIKI:** Gaza missile → **building** (gedung pos polisi: atap datar + 4 jendela + pintu merah, `icon_building`); PMI Jepang chart → **factory** (pabrik: atap sawtooth + cerobong + jendela, `icon_factory`). Kini missile 1× (Zaporizhzhia), chart 1× (Pasar), pawn 1× (Catur).
+4. **DIPERTAHANKAN (terverifikasi Selasa 24 Nov, audit ulang):** lead Korea, Zaporizhzhia, Hasina, Pasar, Gaza, PMI Jepang, ALSO TODAY (BOK / Bali Jatra / Megafire). Polandia tetap tidak dipakai (insiden Senin malam).
+5. **Near-miss (tidak dipakai):** 3 tanker kena ranjau di Hormuz — klaim IRGC sampai ke dunia Selasa dini hari, tapi ranjau meledak Senin 23 Nov; gagal standar ketat yang sama.
+
+### Poster v4
+- File: [entry.png](sandbox://workspace/makefun/news-image-20261124/entry.png) — 1024×1024, 135.033 byte (≤1 MiB)
+- sha256: `977bae959f35b826df6b367cb010815c0e89469b55500c774fd2a8176904652b`
+- Salinan tampil (nama baru, anti-cache): [entry-v4-polish.png](sandbox://workspace/makefun/news-image-20261124/entry-v4-polish.png) — byte-identik dengan entry.png (hanya untuk ditunjukkan ke bos; TIDAK di-commit ke repo)
+- Render 300px: entry-300.png (diperbarui ke v4)
+
+### Verifikasi v4
+- Ukuran: 1024×1024, 135.033 byte ≤ 1.048.576 ✓
+- Determinisme: draw 2× → sha256 sama `977bae95…4652b`; main.py (MAKEFUN_OUTPUT_DIR berbeda, 2 dir) → sha256 sama ✓
+- Wrap: semua headline ≤2 baris, semua fakta ≤2 baris (diukur PIL, lebar teks panel 378px) ✓
+- Cek visual penuh: semua teks terbaca huruf per huruf, tanpa typo, tanpa tumpang tindih; ikon baru building (Gaza), quake (Nepal), factory (PMI) terbaca jelas dan berbeda satu sama lain; garis fakta lead "Moscow envoy." tetap tidak menabrak kicker WAR — UKRAINE (sama seperti v3, tidak diubah).
+- Cek 300px: masthead, tanggal, headline lead + headline panel dan struktur koran tetap terbaca; teks fakta kecil (wajar untuk format koran).
+- Titik terlemah (jujur): (1) Catur tetap peristiwa terjadwal (Game 1 baru mulai 21:00 WIB) — dipertahankan karena tidak ada pengganti 24 Nov yang lebih kuat setelah pencarian menyeluruh; (2) poster kehilangan cerita Polandia — cerita paling besar hari ini — karena insidennya Senin malam; kalau bos mau Polandia kembali, itu keputusan editorial bos, bukan fakta; (3) near-miss Hormuz (tanker kena ranjau Senin) tidak dipakai karena standar ketat.
 
 ## REVISI v3 — audit ketat tanggal KEJADIAN (perintah bos 24 Nov 11:51 WIB: "Perbaiki lagi")
 
@@ -60,11 +85,11 @@ Cross-check fakta live 24 Nov 11:40–12:00 WIB (Reuters, WSJ, Al Jazeera, AFP, 
 - sha256: `bf51716fb6fe1658c5058de7a1a739e6ef74a23b55e33f03350d278ee1df434e`
 - Status: SUPERSEDED oleh v2 (cross-check 24 Nov ~12:00 WIB).
 
-## Layout (v3 — berlaku)
+## Layout (v4 — berlaku; sama seperti v3, hanya isi panel berubah)
 Koran satu halaman, kertas koran terang + tinta hitam + aksen merah/navy/hijau (format sama dengan edisi 23 Nov yang lolos semua cek):
 - Masthead "THE WORLD" + "TUESDAY, 24 NOVEMBER 2026" + garis merah
 - Lead penuh: jet Rusia masuk zona pertahanan Korea Selatan (ikon jet) — "RUSSIAN JETS ENTER DEFENCE ZONE"
-- Grid 2×3: Zaporizhzhia, Hasina, Pasar, Catur, Gaza, Minyak — tiap panel pictogram + kicker + headline + 1 baris fakta
+- Grid 2×3: Zaporizhzhia, Hasina, Pasar, Catur, Gaza, Nepal — tiap panel pictogram + kicker + headline + 1 baris fakta
 - Strip bawah: PMI Jepang + "ALSO TODAY" (BOK, Bali Jatra, Megafire)
 - Footer: "All events reported on Tuesday, 24 November 2026. Sources: wire reports."
 
