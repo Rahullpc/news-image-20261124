@@ -64,6 +64,47 @@ Cerita pengganti (terverifikasi):
 
 Catatan kejujuran: koran 24 Nov wajar memuat pengumuman 23 Nov (Libya, Meksiko, Iran, EU, UN, Test) — semuanya dilaporkan/berkembang lagi 24 Nov. Yang diganti adalah cerita yang tanggalnya meleset berminggu-minggu/bulan/tahun (Sudan 2 Nov, India Agu 2025, ECB 29 Okt, Brasil 20 Nov, Kongres 3 Nov) dan fakta yang salah (SoftBank +8%, "breach" Korea).
 
+## TAHAP 3 — Audit ketat tanggal KEJADIAN (24 Nov ~12:00–12:20 WIB, atas perintah bos "Perbaiki lagi" 11:51 WIB)
+
+Standar baru: **hanya peristiwa yang TERJADI persis Selasa 24 Nov 2026** — bukan "dilaporkan 24 Nov" atau "diumumkan 23 Nov". Audit ini menemukan kesalahan besar v2: **lead Polandia ternyata peristiwa Senin 23 Nov malam**.
+
+### Koreksi besar: lead Polandia GUGUR
+- Bukti: peta OSINT (23 Nov): drone masuk wilayah udara Polandia dekat Dorohusk **~23:00 CET 23 Nov**. Pernyataan Polish Operational Command **22:53 UTC 23 Nov** (pertahanan udara Polandia + NATO disiagakan); misi **berakhir 01:31 UTC 24 Nov** — jam 01:31 UTC adalah saat misi SELESAI, bukan saat insiden. Daily Mail: "Russian drone entered Polish airspace on Monday evening". h.ua 1:31 AM UTC 24 Nov = jam publikasi, bukan jam kejadian.
+- Kesimpulan: insiden terjadi **Senin 23 Nov ~23:00 CET**; yang terjadi Selasa dini hari hanyalah penutupan misi + laporan berita. **Lead Polandia GUGUR** — diganti lead Korea KADIZ.
+
+### Audit semua panel v2 (tanggal KEJADIAN)
+| Panel v2 | Tanggal kejadian | Keputusan |
+|---|---|---|
+| Lead Polandia/NATO | ❌ Senin 23 Nov ~23:00 CET | GANTI → lead Korea KADIZ |
+| Libya (kapal perang) | ❌ Sabtu 22 Nov (serangan); diumumkan 23 Nov | GANTI → Zaporizhzhia |
+| Iran "strikes unlikely" | ⚠️ Pernyataan Trump Senin 23 Nov; "oil 3-month low" TIDAK terverifikasi (minyak jatuh Senin −4%, Selasa bertahan ~$80) | GANTI → Hasina |
+| Pasar (Nikkei/Kospi/Samsung) | ✅ Penutupan Selasa 24 Nov (Reuters); Samsung +8% intraday TIDAK terkonfirmasi di penutupan (AP 7,5%, WSJ 6,5%) | PERTAHANKAN, angka diganti: Taiwan +9,1% (Reuters close) ganti Samsung |
+| Meksiko (El Chapo Isidro) | ❌ Keputusan AG Meksiko Senin 23 Nov | GANTI → Catur Dunia |
+| Gaza | ✅ Selasa 24 Nov (Reuters Kairo) | PERTAHANKAN |
+| Indonesia (Cikande) | ❌ Kebakaran Sabtu 21 Nov; 24 tewas dikonfirmasi Senin 23 Nov; pencarian berlanjut Selasa | GANTI → Minyak |
+| Korea (strip bawah) | ✅ Selasa pagi 24 Nov | NAIK JADI LEAD |
+| ALSO TODAY EU sanksi | ❌ Senin 23 Nov | GANTI → BOK |
+| ALSO TODAY UN AI | ❌ Senin 23 Nov | GANTI → Bali Jatra |
+| ALSO TODAY NZ–India | ❌ Senin 23 Nov (imbang) | GANTI → Megafire |
+
+### Cerita pengganti v3 (semua peristiwa Selasa 24 Nov — sumber + tanggal kejadian)
+- **LEAD — S. KOREA (KADIZ):** Reuters Seoul, 24 Nov: "South Korean military jets scrambled on Tuesday morning" setelah pesawat militer Rusia masuk KADIZ; alert serangan udara Ulleung 07:52 KST dicabut dalam ~5 menit; JCS: tidak ada pelanggaran wilayah udara; attaché militer Rusia dipanggil Selasa. Ikon jet.
+- **UKRAINA — Zaporizhzhia:** Reuters, 24 Nov: serangan Rusia semalam ke Zaporizhzhia tewaskan 2, lukai 22 termasuk 2 anak; Gubernur Fedorov di Telegram: "on Tuesday". Ikon missile.
+- **BANGLADESH — Hasina:** Reuters, 24 Nov: juru bicara bilang ke Reuters "on Tuesday" — Sheikh Hasina berencana kembali 16 Desember dengan penerbangan Biman Bangladesh Airlines setelah 2 tahun di pengasingan di India. Ikon globe.
+- **PASAR:** Reuters close, Selasa 24 Nov: Nikkei +4,5%, Kospi +7,5%, Taiwan +9,1% (reli AI pasca kembalinya Jensen Huang). Ikon chart.
+- **CATUR — Jenewa:** FIDE / Reuters, Selasa 24 Nov: Game 1 Kejuaraan Dunia Catur dimulai 15:00 CET, Jenewa; Gukesh (juara bertahan) vs Sindarov, keduanya 20 tahun; hadiah $2,5 juta. Ikon pawn (baru).
+- **GAZA:** Reuters Kairo, 24 Nov: ≥3 tewas, 5 luka di dekat pos polisi Khan Younis. Ikon missile.
+- **MINYAK:** Bloomberg (via DailyFoxNews, diperbarui 24 Nov): WTI bertahan ~$80, Brent di atas $89 setelah jatuh ~4% Senin; pasar menunggu nasib pembicaraan AS–Iran. Ikon droplet (baru).
+- **STRIP BAWAH — JEPANG PMI:** dpa-AFX, Selasa 24 Nov: flash manufacturing PMI Jepang November 53,7 (naik dari 51,0 Oktober; konsensus 51,5) — tercepat dalam 44 bulan; flash services 52,7; composite 52,9. Ikon chart.
+- **ALSO TODAY — BOK:** Reuters, Selasa 24 Nov: jajak pendapat — Bank of Korea diperkirakan naikkan suku bunga Kamis (25 dari 33 ekonom).
+- **ALSO TODAY — Bali Jatra:** Festival Bali Jatra dibuka Selasa 24 Nov di Cuttack, Odisha (24 Nov–1 Des, Kartika Purnima); Presiden Droupadi Murmu meresmikan sore ini (17:00–20:15). Sumber: katakabalijatra.com + liputan 24 Nov (skycmedia, Odisha News Today). Catatan: satu artikel NIE menulis "on Monday" — salah label; semua sumber lain (jadwal resmi distrik + kunjungan Presiden 24–25 Nov) menegaskan pembukaan 24 Nov.
+- **ALSO TODAY — Megafire:** Newshub / UNSW, Selasa 24 Nov: UNSW + Fire Rescue NSW meluncurkan simulator kebakaran besar (iFire 2.3) — teknologi pertama di dunia untuk melatih pemadam menghadapi kebakaran ekstrem.
+
+### Yang dipertimbangkan tapi tidak dipakai sebagai pengganti
+- Libya (22 Nov), Iran (Senin 23 Nov), Meksiko (Senin 23 Nov), Cikande (Sabtu 21 Nov) — semua gagal standar ketat.
+- Australia CPI (rilis Rabu 25 Nov), India–Nepal MoU (Senin 23 Nov), CrowdStrike–Zscaler $43,9 miliar (Senin 23 Nov), NATO space (Senin 23 Nov), ICE Seattle (Sabtu 21 Nov), Sparta II (Sabtu 21 Nov).
+- Catur: Game 1 dimulai Selasa 21:00 WIB (15:00 CET) — saat poster dibuat (siang WIB) pertandingan BELUM dimulai; panel ini adalah peristiwa terjadwal hari itu, bukan hasil. Dicatat jujur sebagai titik terlemah bersama panel Minyak (pola pasar, bukan peristiwa diskret).
+
 ## Rencana build
 - Layout (sama seperti edisi 23 Nov yang lolos semua cek): header masthead "THE WORLD — TUESDAY 24 NOVEMBER 2026" + lead penuh (Polandia) + grid 2 kolom × 3 baris (Ukraina, Iran, Pasar, Meksiko, Sudan, India) + strip bawah (Korea Selatan + ALSO TODAY: ECB, Brasil, Kongres AS).
 - Tiap panel: pictogram sederhana + headline pendek + 1 baris fakta (angka/tempat). Warna: kertas koran terang, aksen merah/biru per kategori.
