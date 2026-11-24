@@ -37,6 +37,33 @@
 - PELUANG JUARA 1: rendah. Poster kelas atas bisa dibuat (peluang top 50 / dapat hadiah $1,20–$20 cukup masuk akal), tapi juara 1 di antara ribuan entry dengan juri yang noisy pada dasarnya lotre — perkiraan kasar hanya beberapa persen.
 - Bos sudah memutuskan MASUK (24 Nov 11:32 WIB) — bangun 1 poster terbaik dan submit 1x, dengan ekspektasi hadiah $1,20–$2, bukan $20.
 
+## TAHAP 2 — Cross-check + perbaikan (24 Nov ~12:00 WIB, atas perintah bos "crosscheck perbaiki dulu sebagus mungkin")
+
+Verifikasi ulang tiap cerita v1 dari sumbernya + cek berita live 24 Nov 11:40–12:00 WIB (Reuters, WSJ, TradingView, h.ua, Al Jazeera, AFP, The Guardian, AP). Tanggal 24 Nov 2026 = Selasa, terverifikasi `date -d`.
+
+| Cerita v1 | Hasil | Keputusan |
+|---|---|---|
+| Lead Polandia/NATO | ✅ Terverifikasi 24 Nov (Reuters 24 Nov: drone langgar wilayah udara Polandia 01:31 UTC dekat Dorohusk, Lublin; izin tembak ditahan; NATO kerahkan AWACS) | PERTAHANKAN |
+| Ukraina/Libya | ⚠️ Peristiwa 22 Nov, diumumkan 23 Nov; WSJ terbitkan laporan mendalam 24 Nov | PERTAHANKAN (pengumuman 23 Nov + liputan 24 Nov; cerita utama siklus berita 24 Nov) |
+| Iran "tunda sampai 1 Jan" | ⚠️ Framing 1 Jan dari pernyataan 19–22 Nov; minyak -4% adalah pergerakan 23 Nov | REFRAME ke sudut 24 Nov: Trump sebut serangan baru "quite unlikely" (Senin); minyak ke titik terendah 3 bulan (Selasa); sanksi AS ke shadow bank Iran |
+| Pasar "SoftBank +8%" | ❌ SALAH — SoftBank +4,99% (TradingKey); Nikkei +4,4%→+4,5% dan Kospi +7%→+7,5% (penutupan Reuters 24 Nov) | PERBAIKI angka; ganti SoftBank → Samsung +8% (intraday 24 Nov +8,2–8,3% di beberapa sumber) |
+| Meksiko | ✅ Terverifikasi (Reuters 23 Nov; Al Jazeera 24 Nov) | PERTAHANKAN |
+| Sudan (pemadaman) | ❌ TANGGAL SALAH — cerita Al Jazeera 2 Nov 2026 | GANTI → Gaza |
+| India (banjir Himalaya 4 tewas, ~100 hilang) | ❌ TANGGAL SALAH — AFP 6 Agu 2025 (Dharali, Uttarakhand) | GANTI → Indonesia (kebakaran pabrik) |
+| Korea "airspace breach" | ❌ FAKTA SALAH — JCS: TIDAK ada pelanggaran wilayah udara; pesawat Rusia masuk KADIZ saja; alert dicabut dalam 5 menit | PERBAIKI kata: "defence zone", tanpa kata "breach" |
+| ALSO TODAY ECB | ❌ TANGGAL SALAH — Lagarde umumkan mundur 29 Okt 2026 | GANTI → EU sanksi Rusia |
+| ALSO TODAY Brasil | ❌ TANGGAL SALAH — badai Tupanciretã 20 Nov | GANTI → UN AI rules |
+| ALSO TODAY Kongres AS | ❌ TANGGAL SALAH — Melat Kiros terpilih 3 Nov 2026 | GANTI → SPORT NZ vs India |
+
+Cerita pengganti (terverifikasi):
+- **GAZA** — Reuters (Kairo, 24 Nov): serangan udara Israel tewaskan ≥3 warga Palestina di dekat pos polisi Khan Younis, 5 luka. Al Jazeera 24 Nov: "Israeli drone attack targets police post in Gaza's Khan Younis".
+- **INDONESIA** — Reuters 23 Nov + laporan 24 Nov (r24.mv, 24 Nov 04:18 UTC): kebakaran pabrik permen PT Fonusa Agung Mulia, Cikande, Banten, Sabtu 21 Nov; 24 tewas dikonfirmasi Senin 23 Nov; ~30 masih hilang; pencarian berlanjut Selasa 24 Nov; tes DNA untuk identifikasi korban.
+- **EU** — European Commission mengusulkan paket sanksi ke-22 terhadap Rusia, Senin 23 Nov (dilaporkan 24 Nov): larang tim Rusia tampil di bawah bendera Rusia di acara UE; sasar bank, platform kripto, eks-kombatan.
+- **UN** — Sekjen PBB António Guterres, Senin 23 Nov di Bridgetown Special Summit on AI Safety, Barbados (dilaporkan 24 Nov): serukan negara anggota sepakati kerangka global manajemen risiko AI dalam setahun.
+- **SPORT** — Test pertama India vs Selandia Baru, Wellington, berakhir imbang Senin 23 Nov (reaksi/liputan 24 Nov): NZ 368 & 239/5 (Mitchell 49*, Phillips 26*); India 720/9 declared.
+
+Catatan kejujuran: koran 24 Nov wajar memuat pengumuman 23 Nov (Libya, Meksiko, Iran, EU, UN, Test) — semuanya dilaporkan/berkembang lagi 24 Nov. Yang diganti adalah cerita yang tanggalnya meleset berminggu-minggu/bulan/tahun (Sudan 2 Nov, India Agu 2025, ECB 29 Okt, Brasil 20 Nov, Kongres 3 Nov) dan fakta yang salah (SoftBank +8%, "breach" Korea).
+
 ## Rencana build
 - Layout (sama seperti edisi 23 Nov yang lolos semua cek): header masthead "THE WORLD — TUESDAY 24 NOVEMBER 2026" + lead penuh (Polandia) + grid 2 kolom × 3 baris (Ukraina, Iran, Pasar, Meksiko, Sudan, India) + strip bawah (Korea Selatan + ALSO TODAY: ECB, Brasil, Kongres AS).
 - Tiap panel: pictogram sederhana + headline pendek + 1 baris fakta (angka/tempat). Warna: kertas koran terang, aksen merah/biru per kategori.
