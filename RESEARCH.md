@@ -120,6 +120,27 @@ Standar baru: **hanya peristiwa yang TERJADI persis Selasa 24 Nov 2026** — buk
 4. **Audit ulang panel lain (standar ketat, hanya yang terjadi 24 Nov):** Lead Korea ✓ (Reuters Seoul 24 Nov — dicek ulang di sesi ini via Reuters), Zaporizhzhia ✓ (Reuters 24 Nov), Hasina ✓ (Reuters 24 Nov), Pasar ✓ (penutupan Reuters 24 Nov), Gaza ✓ (Reuters Kairo 24 Nov), PMI Jepang ✓ (dpa-AFX 24 Nov), ALSO TODAY BOK ✓ (jajak pendapat Reuters 24 Nov) / Bali Jatra ✓ / Megafire ✓. Polandia TETAP tidak dipakai (insiden Senin malam).
 5. **Near-miss terkuat (jujur, tidak dipakai):** tiga kapal tanker kena ranjau di Selat Hormuz — klaim IRGC sampai ke dunia Selasa dini hari (live blog Al Jazeera 24 Nov, artikel Reuters 24 Nov), TAPI ranjau meledak Senin 23 Nov. Di bawah standar ketat yang sama yang menggugurkan Libya/Iran/Meksiko, cerita ini tidak lolos sebagai panel grid.
 
+## TAHAP 5 — Polandia kembali atas perintah bos (24 Nov ~12:10 WIB, "insiden polandia tambahkan")
+
+**Keputusan bos (verbatim, 24 Nov 12:09 WIB): "insiden polandia tambahkan"** — menjawab pertanyaan editorial ronde v5: bos MAU Polandia kembali. Polandia dikembalikan sebagai **LEAD**; Korea turun ke slot grid catur; catur gugur seluruhnya.
+
+### Fakta Polandia (kejujuran tanggal dijaga)
+- Insiden drone: **Senin 23 Nov ~23:00 CET** (OSINT; Polish Operational Command 22:53 UTC 23 Nov); misi pertahanan udara berakhir **01:31 UTC Selasa 24 Nov**. Berita + pernyataan resminya pecah **Selasa** (Reuters, diperbarui Selasa; karusel Instagram 24 Nov bersumber Reuters).
+- Isi berita Selasa (Reuters, "Russian unmanned aerial vehicle briefly violated Polish airspace"): UAV Rusia sebentar melanggar wilayah udara Polandia saat serangan malam ke Ukraina barat; **izin tembak diberikan lalu ditahan** setelah drone berbelok ke timur (risiko sipil); konteks: 3 rudal Kh-101 mendarat di Polandia Jumat 20 Nov.
+- **Perkembangan Selasa:** (1) Polandia menaikkan pertahanan udara ke siaga tempur semalam Selasa 24 Nov (Operational Command, via Europe Says); (2) berita pengerahan AWACS mendominasi liputan Selasa — NATO akan mengirim pesawat AWACS ke Polandia sebagai respons (diumumkan Wamenhan Paweł Zalewski Senin pasca rapat Dewan Atlantik Utara; SACEUR Gen. Grynkewich mengesahkan pengerahan).
+- **Framing lead (jujur tanggal):** headline "RUSSIAN DRONE IN NATO AIRSPACE" menamai insiden yang diberitakan Selasa; kalimat fakta **fokus ke respons Selasa** — "Shoot-down authorised, then held; NATO sends AWACS to Poland." — dan TIDAK mengklaim insidennya terjadi Selasa. Footer "All events reported on Tuesday, 24 November 2026" tetap akurat (insiden dilaporkan Selasa).
+- Ikon lead kembali radar (AWACS/early warning), seperti v1.
+
+### Catur — pencarian pengganti sudut BARU (olahraga, sains/luar angkasa, budaya, ekonomi non-pasar)
+- **Olahraga:** UCL matchday 5 memang Selasa 24 Nov (9 laga: Galatasaray–Aston Villa, Arsenal–Dortmund, Man City–Napoli, Real Madrid–PSV, dll) — TAPI kick-off 17:45/20:00 UTC = 00:45/03:00 WIB Rabu, **belum dimainkan** saat poster dibuat (12:10 WIB); "skor" di satu video promo Instagram 23 Nov adalah fabrikasi pra-laga, bukan hasil. ATP Finals (Alcaraz kalahkan Zverev) = **Senin 23 Nov**. GP Las Vegas (Verstappen) = **Minggu 22 Nov**. Test NZ–India imbang = **Senin 23 Nov**. Semua gagal.
+- **Luar angkasa:** Shenzhou-24 **diumumkan Selasa** (CMSA; awak termasuk astronaut Pakistan pertama ke stasiun Tiangong) — TAPI peluncurannya **Rabu 25 Nov 00:18 GMT**; ini pengumuman acara masa depan — kelemahan yang sama seperti catur, dan lebih lemah dari Korea. Ariane 64 / Amazon Leo LE-04 (10:45 UTC), Progress MS-36 (10:17 UTC), USSF-266 (16:08 UTC) — semuanya **dijadwalkan sore/malam ini, belum terbang** saat poster dibuat. Gagal sebagai peristiwa yang sudah terjadi.
+- **Budaya/ekonomi non-pasar:** tidak ada yang kuat dan terverifikasi Selasa — Ferrari 296 (Finali Mondiali, akhir pekan), Google $5 juta IIT Kharagpur (tanggal pengumuman tidak jelas), Kamala Express India–Nepal (minor, tanggal tidak terverifikasi). "US to blacklist Asian AI firm Megaspeed" muncul di digest 24 Nov tapi sumbernya lemah (digest sekolah) dan waktunya tidak terverifikasi.
+- **Kesimpulan:** tidak ada pengganti yang lebih kuat dari **Korea** — Korea adalah peristiwa diskret Selasa yang nyata (jet dikerahkan Selasa pagi, KADIZ, attaché dipanggil Selasa). **Korea mengambil slot grid catur; catur gugur seluruhnya.** Panel tersisa yang paling lunak kini Hasina (pengumuman rencana, Selasa — nyata tapi berupa rencana).
+
+### Panel Korea di grid (slot 4, menggantikan catur)
+- Kicker S. KOREA (merah), headline "RUSSIAN JETS ENTER DEFENCE ZONE" (2 baris), fakta "Jets scramble as Russian planes enter defence zone." (2 baris), ikon jet. Fakta sama seperti lead v3/v4 (Reuters Seoul 24 Nov).
+- Catatan: Korea kini muncul 2× di poster (panel grid + item BOK di ALSO TODAY) — cerita berbeda (jet vs suku bunga), satu negara; sama seperti v4 (lead Korea + BOK).
+
 ## Rencana build
 - Layout (sama seperti edisi 23 Nov yang lolos semua cek): header masthead "THE WORLD — TUESDAY 24 NOVEMBER 2026" + lead penuh (Polandia) + grid 2 kolom × 3 baris (Ukraina, Iran, Pasar, Meksiko, Sudan, India) + strip bawah (Korea Selatan + ALSO TODAY: ECB, Brasil, Kongres AS).
 - Tiap panel: pictogram sederhana + headline pendek + 1 baris fakta (angka/tempat). Warna: kertas koran terang, aksen merah/biru per kategori.
