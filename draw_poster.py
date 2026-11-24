@@ -168,34 +168,51 @@ def icon_flame(d, x0, y0, s, ink, accent):
                (cx - 7, y0 + s - 16), (cx - 9, y0 + 52)], fill=GOLD)
 
 
+def icon_pawn(d, x0, y0, s, ink, accent):
+    cx = x0 + s / 2
+    d.ellipse([cx - 11, y0 + 10, cx + 11, y0 + 32], fill=ink)
+    d.rectangle([cx - 14, y0 + 34, cx + 14, y0 + 40], fill=ink)
+    d.polygon([(cx - 10, y0 + 40), (cx + 10, y0 + 40),
+               (cx + 18, y0 + 62), (cx - 18, y0 + 62)], fill=ink)
+    d.rectangle([cx - 20, y0 + 62, cx + 20, y0 + 68], fill=accent)
+
+
+def icon_drop(d, x0, y0, s, ink, accent):
+    cx = x0 + s / 2
+    d.polygon([(cx, y0 + 8), (cx + 16, y0 + 36), (cx - 16, y0 + 36)],
+              fill=accent)
+    d.ellipse([cx - 20, y0 + 28, cx + 20, y0 + 68], fill=accent)
+    d.ellipse([cx - 11, y0 + 38, cx - 2, y0 + 52], fill=PAPER)
+
+
 ICONS = {"globe": icon_globe, "radar": icon_radar,
          "missile": icon_missile, "chart": icon_chart,
          "cuffs": icon_cuffs, "drone": icon_drone,
          "bolt": icon_bolt, "wave": icon_wave, "jet": icon_jet,
-         "flame": icon_flame}
+         "flame": icon_flame, "pawn": icon_pawn, "drop": icon_drop}
 
 
 # ---------------------------------------------------------------- stories
 # (kicker, accent, headline, fact, icon)
 STORIES = [
-    ("WAR — UKRAINE", RED, "SEA DRONES HIT WARSHIP OFF LIBYA",
-     "Drones strike a Russian warship at a Libyan base; a refinery burns in Russia.",
-     "drone"),
-    ("IRAN — U.S.", RED, "TRUMP: NEW IRAN STRIKES UNLIKELY",
-     "Oil hits 3-month low; U.S. sanctions Iran's shadow banks.",
-     "bolt"),
+    ("WAR — UKRAINE", RED, "RUSSIAN STRIKE KILLS 2 IN ZAPORIZHZHIA",
+     "Overnight attack wounds 22, incl. 2 children.",
+     "missile"),
+    ("BANGLADESH", NAVY, "HASINA PLANS DEC 16 RETURN",
+     "Ousted PM seeks Biman flight home after 2 years in exile.",
+     "globe"),
     ("MARKETS", NAVY, "ASIAN STOCKS SURGE ON AI TRADE",
-     "Nikkei +4.5%, Kospi +7.5% as Huang's return revives the AI rally; Samsung +8%.",
+     "Nikkei +4.5%, Kospi +7.5%, Taiwan +9.1% as Huang's return revives the AI rally.",
      "chart"),
-    ("MEXICO", NAVY, "EL CHAPO ISIDRO TO FACE MEXICAN TRIAL",
-     "Mexico to prosecute the cartel boss at home, defying a U.S. extradition request.",
-     "cuffs"),
+    ("CHESS — GENEVA", NAVY, "WORLD CHESS TITLE MATCH OPENS",
+     "Gukesh defends crown vs Sindarov, both 20, in Geneva.",
+     "pawn"),
     ("GAZA", RED, "AIRSTRIKE KILLS 3 AT GAZA POLICE POST",
      "At least 3 dead, 5 wounded near a police post in Khan Younis.",
      "missile"),
-    ("INDONESIA", RED, "24 DEAD, 30 MISSING IN FACTORY FIRE",
-     "Search goes on at Java candy plant; DNA tests to name victims.",
-     "flame"),
+    ("OIL", NAVY, "OIL HOLDS NEAR $80 AS IRAN TALKS STALL",
+     "WTI steadies; Brent above $89 after Monday's 4% slide.",
+     "drop"),
 ]
 
 
@@ -238,25 +255,25 @@ def draw():
     fs = font(SANS_B, 15)
     tracked(d, W / 2, 174, "THE DAY'S WORLD NEWS — IN ONE PAGE", fs, MUTED, tr=3)
 
-    # ---- lead story: Poland / NATO airspace
+    # ---- lead story: South Korea / KADIZ (Tuesday 24 Nov)
     ly = 204
     fk = font(SANS_B, 17)
-    d.text((28, ly), "NATO — POLAND", font=fk, fill=RED)
+    d.text((28, ly), "S. KOREA", font=fk, fill=RED)
     fh = font(SERIF_B, 42)
-    d.text((28, ly + 26), "RUSSIAN DRONE", font=fh, fill=INK)
-    d.text((28, ly + 72), "IN NATO AIRSPACE", font=fh, fill=INK)
+    d.text((28, ly + 26), "RUSSIAN JETS", font=fh, fill=INK)
+    d.text((28, ly + 72), "ENTER DEFENCE ZONE", font=fh, fill=INK)
     ff = font(SANS, 19)
-    fact = ("Shoot-down authorised, then held; "
-            "NATO sends AWACS to Poland.")
+    fact = ("Jets scramble as Russian planes enter defence zone; "
+            "Seoul to summon Moscow envoy.")
     fl = wrap(d, fact, ff, 676)
     yy = ly + 124
     for ln in fl[:2]:
         d.text((28, yy), ln, font=ff, fill=INK)
         yy += 25
-    # lead radar, right side
+    # lead jet, right side
     gx, gy, gs = 716, ly - 6, 148
     d.rectangle([gx, gy, gx + gs, gy + gs], fill=TINT, outline=RULE, width=1)
-    icon_radar(d, gx, gy, gs, INK, RED)
+    icon_jet(d, gx, gy, gs, INK, RED)
 
     # ---- grid 2 x 3
     gy0 = 372
@@ -274,22 +291,22 @@ def draw():
     d.line([(28, gy0 + 2 * row_h + 12), (W - 28, gy0 + 2 * row_h + 12)],
            fill=RULE, width=1)
 
-    # ---- bottom band: South Korea + also today
+    # ---- bottom band: Japan PMI + also today
     by = 898
     d.line([(28, by - 10), (W - 28, by - 10)], fill=INK, width=2)
-    korea = ("S. KOREA", RED, "RUSSIAN JETS ENTER DEFENCE ZONE",
-             "Jets scramble as Russian planes enter defence zone.",
-             "jet")
-    draw_panel(d, 28, by, 580, 96, korea)
+    pmi = ("JAPAN", NAVY, "FACTORY PMI HITS 53.7",
+           "Manufacturing growth tops forecasts in November.",
+           "chart")
+    draw_panel(d, 28, by, 580, 96, pmi)
     ax = 648
     d.line([(ax - 20, by), (ax - 20, by + 92)], fill=RULE, width=1)
     fa = font(SANS_B, 16)
     d.text((ax, by + 2), "ALSO TODAY", font=fa, fill=RED)
     fi = font(SANS, 17)
     fb = font(SANS_B, 17)
-    also = [("EU — ", "22nd Russia sanctions proposed"),
-            ("UN — ", "Guterres seeks global AI rules"),
-            ("SPORT — ", "NZ hold India to Wellington draw")]
+    also = [("S. KOREA — ", "BOK seen hiking rates Thu"),
+            ("INDIA — ", "Bali Jatra opens in Cuttack"),
+            ("AUSTRALIA — ", "Megafire simulator unveiled")]
     yy = by + 26
     for lead, rest in also:
         d.text((ax, yy), lead, font=fb, fill=INK)
