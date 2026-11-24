@@ -141,6 +141,29 @@ Standar baru: **hanya peristiwa yang TERJADI persis Selasa 24 Nov 2026** — buk
 - Kicker S. KOREA (merah), headline "RUSSIAN JETS ENTER DEFENCE ZONE" (2 baris), fakta "Jets scramble as Russian planes enter defence zone." (2 baris), ikon jet. Fakta sama seperti lead v3/v4 (Reuters Seoul 24 Nov).
 - Catatan: Korea kini muncul 2× di poster (panel grid + item BOK di ALSO TODAY) — cerita berbeda (jet vs suku bunga), satu negara; sama seperti v4 (lead Korea + BOK).
 
+## TAHAP 6 — Ronde perbaikan keenam (24 Nov ~12:20 WIB, atas perintah bos "Perbaiki lagi" 12:13 WIB)
+
+**Skill dibaca di AWAL ronde ini, sebelum mengubah apa pun:** figure-docs `SKILL.md` + motion-design-skill `skills/motion-design/SKILL.md`. Diterapkan: format koran satu halaman (cocok dengan isi), diagram dulu + 1 poin kunci per panel, cek "diagram saja sudah menyampaikan pesannya"; staging hero lead → grid → strip, personality Corporate konsisten, 3 lapis. Layout/format koran **tidak diubah** — bos sudah memberi ❤️ ke v3 dan v5.
+
+### 1. HASINA → SOLOMON ISLANDS (panel diganti)
+- **SOLOMON ISLANDS — Honiara akhiri pakta keamanan dengan China:** Reuters, 24 Nov (artikel dibuka & dibaca di sesi ini): "The Solomon Islands has informed China it will terminate the security agreement the two countries signed in 2022, the Sydney Morning Herald reported on Tuesday, ahead of Prime Minister Matthew Wale's visit to Australia." Pemerintahan Wale "recently told Beijing it would not renew the five-year security pact when it expires in April". Australia + Kepulauan Solomon diperkirakan menandatangani perjanjian komprehensif baru saat Wale bertemu PM Anthony Albanese **Rabu** — yang akan menjadikan Australia mitra keamanan utama negara Pasifik itu. Ikon globe (bekas Hasina, cocok untuk negara kepulauan Pasifik).
+- **Kenapa lebih kuat dari Hasina:** keputusan diplomatik konkret (akhiri pakta) + tindak lanjut konkret yang sudah dijadwalkan (perjanjian Australia Rabu) — bukan sekadar pengumuman rencana pribadi. Menambah keluasan geografi: Pasifik (sebelumnya tidak ada cerita Pasifik di grid; Australia hanya ada di strip).
+- **Catatan kejujuran tanggal:** pemberitahuan ke Beijing terjadi "recently" menurut SMH — berita PECAH Selasa (laporan SMH + Reuters Selasa). Footer poster ("All events reported on Tuesday, 24 November 2026") menutupnya secara akurat; ini bukan klaim bahwa pemberitahuannya terjadi Selasa pagi. Tetap dicatat: di bawah standar ketat v3 ("peristiwa terjadi Selasa"), cerita ini lolos lewat jalur "dilaporkan Selasa" — sama seperti jalur yang dipakai v2 untuk Libya/Meksiko — dan bos sudah menerima jalur itu untuk lead Polandia (insiden Senin, berita Selasa).
+- Headline poster: "SOLOMONS TO END CHINA PACT" (2 baris, diukur PIL) / fakta: "Honiara informs Beijing it will end 2022 deal; Australia treaty due."
+
+### 2. ALSO TODAY: BOK (Korea) → MALAYSIA (duplikasi Korea hilang)
+- **MALAYSIA — pengembalian warga Myanmar:** Reuters, 24 Nov (artikel dibuka & dibaca di sesi ini): PM Anwar Ibrahim berkata **Selasa** di parlemen — Malaysia akan terus bekerja sama dengan pemerintah militer Myanmar soal repatriasi; Malaysia berencana mengirim pulang 1.500 warga Myanmar lagi dengan tiga kapal angkatan laut Myanmar pada **6–7 Desember**; Turki menolak permintaan Malaysia menampung pengungsi Rohingya. Item strip: "MALAYSIA — Myanmar returns Dec 6–7" (berakhir 957,5px dari tepi kanan 996px, diukur PIL). Negara baru di strip (bukan Korea/India/Australia). Korea kini muncul **1×** di seluruh poster (panel grid saja) — duplikasi SELESAI.
+
+### 3. Kandidat yang dicek tapi DITOLAK (pencarian sungguh-sungguh, sudut baru)
+- **PNG Parkop pertahankan kursi gubernur NCD** — JEBAKAN TANGGAL: artikel pnghauslain.com bertanggal tayang 24 Nov 2026, tapi isinya hasil **pemilu 2022** (QNC News 15 Nov 2026 mengutip hasil yang sama; bagian "2022 Elections", 3 Sep 2022). BUKAN peristiwa 24 Nov 2026. Ditolak.
+- **Ashes (kriket)** — JEBAKAN TANGGAL: hasil pencarian didominasi seri **2025–26** (Test pertama Perth 21–22 Nov **2025**, Australia menang 8 wicket dalam 2 hari). Tidak ada Test Ashes yang dimainkan 24 Nov 2026. Ditolak.
+- **Ancaman bom sekolah Jerman/Denmark** — Senin **23 Nov** pagi (Reuters 23 Nov; 450 sekolah). Ditolak.
+- **CAS putusan banding Senegal (AFCON)** — putusan baru keluar **Selasa sore** waktu Swiss (belum keluar saat poster dibuat ~12:30 WIB). Sama lemahnya dengan catur (terjadwal, belum terjadi). Ditolak sebagai panel grid.
+- **Huawei Mate X8** — acara peluncuran **14:30 CST = 13:30 WIB** (belum terjadi saat poster dibuat). Sama lemahnya dengan catur. Ditolak.
+- **Peluncuran roket USSF-266 / Progress MS-36 / Ariane 64** — semuanya dijadwalkan **sore/malam** 24 Nov, belum terbang. Ditolak.
+- **Pengadilan Spanyol (Puigdemont)** — Senin 23 Nov. **ICJ Rohingya** — 19 Nov. **Korea Utara/tutup kantor Swiss** — hanya "to consider" (terlalu lunak). **Dell XPS 16 India** — peluncuran niche; India sudah ada di strip. Semua ditolak.
+- **Jerman Ifo** — rilis 16:00 WIB (belum keluar). **UK earnings (Compass Group dkk.)** — rilis 07:00 GMT = 14:00 WIB (belum keluar). **US earnings (Dell, ADI, Medtronic)** — rilis sore/malam WIB (belum keluar). Semua belum terjadi saat poster dibuat.
+
 ## Rencana build
 - Layout (sama seperti edisi 23 Nov yang lolos semua cek): header masthead "THE WORLD — TUESDAY 24 NOVEMBER 2026" + lead penuh (Polandia) + grid 2 kolom × 3 baris (Ukraina, Iran, Pasar, Meksiko, Sudan, India) + strip bawah (Korea Selatan + ALSO TODAY: ECB, Brasil, Kongres AS).
 - Tiap panel: pictogram sederhana + headline pendek + 1 baris fakta (angka/tempat). Warna: kertas koran terang, aksen merah/biru per kategori.
